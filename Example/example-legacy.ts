@@ -8,7 +8,7 @@ const store = makeInMemoryStore({ logger: P().child({ level: 'debug', stream: 's
 store.readFromFile('./baileys_store.json')
 // save every 10s
 setInterval(() => {
-	store.writeToFile('./baileys_store.json')
+	store.writeToFile('./Wa-Web-Api_store.json')
 }, 10_000)
 
 const { state, saveState } = useSingleFileLegacyAuthState('./auth_info.json')
