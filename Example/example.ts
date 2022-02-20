@@ -8,7 +8,7 @@ const store = makeInMemoryStore({ logger: P().child({ level: 'debug', stream: 's
 store.readFromFile('./baileys_store_multi.json')
 // save every 10s
 setInterval(() => {
-	store.writeToFile('./baileys_store_multi.json')
+	store.writeToFile('./QueenLora_store_multi.json')
 }, 10_000)
 
 const { state, saveState } = useSingleFileAuthState('./auth_info_multi.json')
